@@ -1312,6 +1312,9 @@
     <!-- Name of the ethernet status bar icon. -->
     <string name="status_bar_ethernet">Ethernet</string>
 
+    <!-- Roaming -->
+    <string name="status_bar_roaming">Roaming</string>
+
     <!-- Name of the alarm status bar icon. -->
     <string name="status_bar_alarm">Alarm</string>
 
