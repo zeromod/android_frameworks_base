@@ -3931,7 +3931,7 @@ public final class Settings {
                 }
             }
         };
-
+	/**
          * IMPORTANT: If you add a new public settings you also have to add it to
          * PUBLIC_SETTINGS below. If the new setting is hidden you have to add
          * it to PRIVATE_SETTINGS below. Also add a validator that can validate
@@ -3969,6 +3969,9 @@ public final class Settings {
          * @hide
          */
         public static final String SHOW_BATTERY_PERCENT = "show_battery_percent";
+
+	/** @hide */
+        private static final Validator SHOW_BATTERY_PERCENT_VALIDATOR = sBooleanValidator;
 
         /**
          * Display style of the status bar battery information
@@ -4194,7 +4197,7 @@ public final class Settings {
             PUBLIC_SETTINGS.add(HAPTIC_FEEDBACK_ENABLED);
             PUBLIC_SETTINGS.add(SHOW_WEB_SUGGESTIONS);
             PUBLIC_SETTINGS.add(VIBRATE_WHEN_RINGING);
-        }
+        };
 
         /**
          * These are all hidden system settings.
